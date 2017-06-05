@@ -21,7 +21,10 @@ function Stepper({
   activeTitleColor, completeTitleColor, defaultTitleColor,
   size, circleFontSize, titleFontSize,
   circleTop, titleTop, completeOpacity, activeOpacity, defaultOpcaity,
-  completeTitleOpacity, activeTitleOpacity, defaultTitleOpacity
+  completeTitleOpacity, activeTitleOpacity, defaultTitleOpacity,
+  defaultBorderColor,activeBorderColor, completeBorderColor,
+  defaultBorderWidth, activeBorderWidth, completeBorderWidth,
+  defaultBorderStyle, activeBorderStyle, completeBorderStyle
 }) {
   return (
     <div style={ styles.root }>
@@ -56,7 +59,15 @@ function Stepper({
             defaultTitleOpacity={defaultTitleOpacity}
             completeTitleOpacity={completeTitleOpacity}
             activeTitleOpacity={activeTitleOpacity}
-
+            defaultBorderColor={defaultBorderColor}
+            activeBorderColor={activeBorderColor}
+            completeBorderColor={completeBorderColor}
+            defaultBorderWidth={defaultBorderWidth}
+            activeBorderWidth={activeBorderWidth}
+            completeBorderWidth={completeBorderWidth}
+            defaultBorderStyle={defaultBorderStyle}
+            activeBorderStyle={activeBorderStyle}
+            completeBorderStyle={completeBorderStyle}
           />
         )) }
       </div>
